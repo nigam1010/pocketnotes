@@ -1,0 +1,153 @@
+/* Sidebar Container */
+.sidebar {
+  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-right: none;
+  position: relative;
+  box-shadow: none;
+  flex-shrink: 0;
+}
+
+/* Sticky Header */
+.sidebar-header {
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+  padding: 32px 0 28px 32px;
+  z-index: 10;
+  border-bottom: none;
+}
+
+.sidebar-header h1 {
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+/* Groups List Container */
+.groups-list-container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+/* Custom Scrollbar */
+.groups-list-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.groups-list-container::-webkit-scrollbar-track {
+  background: #D9D9D9;
+  border-radius: 5.5px;
+}
+
+.groups-list-container::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 4.5px;
+  width: 8px;
+  height: 55px;
+}
+
+.groups-list-container::-webkit-scrollbar-thumb:hover {
+  background: #F0F0F0;
+}
+
+/* Group Item */
+.group-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0 20px 32px;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: transparent;
+}
+
+.group-item:hover {
+  background-color: #F7F7F7;
+}
+
+.group-item.active {
+  background-color: #2F2F2F2B;
+}
+
+/* Group Avatar */
+.group-avatar {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+/* Group Name */
+.group-name {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  font-weight: 500;
+  letter-spacing: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+/* Sticky Add Button */
+.add-group-btn {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #16008B;
+  border: none;
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(22, 0, 139, 0.25);
+}
+
+.add-group-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(22, 0, 139, 0.35);
+}
+
+.add-group-btn:active {
+  transform: scale(0.95);
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-md);
+  color: var(--text-gray);
+  font-size: var(--font-sm);
+}
