@@ -1,18 +1,28 @@
 # Pocket Notes - React Notes App
 
 Deployed at: https://pocketnotespro.netlify.app/
+
+
 A minimal note-taking application built with React and Vite, featuring group-based note organization with localStorage persistence.
 
 ## Features
 
 ✅ Create note groups with color coding
+
 ✅ Add notes within groups
+
 ✅ localStorage persistence
+
 ✅ Date/time metadata
+
 ✅ Sticky UI elements
+
 ✅ Responsive design
+
 ✅ Modal management (outside click, ESC key)
+
 ✅ Duplicate group prevention
+
 ✅ Form validation
 
 ## Running Locally
