@@ -64,7 +64,7 @@ const NotesArea = ({ group, onAddNote, onBack }) => {
       <div className="notes-area">
         <div className="notes-empty-state">
           <div className="empty-state-content">
-            <img src="src/assets/image.svg" alt="Notes illustration" />
+            <img src="/image.svg" alt="Notes illustration" />
             <h2>Pocket Notes</h2>
             <p>
               Send and receive messages without keeping your phone online.<br />
