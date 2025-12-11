@@ -72,7 +72,7 @@ const NotesArea = ({ group, onAddNote, onBack }) => {
             </p>
           </div>
           <div className="lock-icon">
-            <img src="src/assets/lock.svg" alt="lock" />
+            <img src="/lock.svg" alt="lock" />
              end-to-end encrypted
           </div>
         </div>
