@@ -14,13 +14,14 @@
 .notes-header {
   position: sticky;
   top: 0;
-  background-color: #001F8D;
-  padding: 20px 40px;
+  background-color: #001F8B;
+  padding: 15px 17px;
+  height: 98px;
   display: flex;
   align-items: center;
   gap: 29px;
   z-index: 10;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
 .notes-header-avatar {
@@ -77,109 +78,128 @@
 
 /* Individual Note */
 .note-item {
-  background-color: var(--white);
-  border-radius: var(--radius-md);
-  padding: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
-  box-shadow: var(--shadow-sm);
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
 }
 
 .note-text {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 160.19%;
   color: #000000;
   white-space: pre-wrap;
   word-wrap: break-word;
-  letter-spacing: 0.01em;
-  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.035em;
+  margin-bottom: 18px;
+  font-weight: 400;
 }
 
 .note-time {
   display: flex;
-  gap: var(--spacing-lg);
+  gap: 16px;
   align-items: center;
   justify-content: flex-end;
-  font-size: var(--font-xs);
-  color: var(--text-gray);
+  font-size: 18px;
+  color: #353535;
   margin-top: auto;
 }
 
 .note-date {
   font-weight: 500;
+  font-size: 18px;
+  line-height: 97.69%;
+  letter-spacing: 0.02em;
+}
+
+.note-time span:nth-child(2) {
+  width: 8px;
+  height: 8px;
+  background: #353535;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 /* Input Area (Sticky Bottom) */
 .notes-input-area {
   position: sticky;
   bottom: 0;
-  background-color: #DAE5F5;
-  padding: var(--spacing-lg);
-  border-top: 2px solid var(--border-gray);
+  background-color: #001F8B;
+  padding: 23px 32px;
+  height: 255px;
+  border-top: none;
 }
 
 .notes-input-container {
   display: flex;
   align-items: flex-end;
-  gap: var(--spacing-md);
-  background-color: var(--white);
-  border-radius: var(--radius-lg);
-  padding: var(--spacing-md);
-  box-shadow: var(--shadow-md);
+  gap: 16px;
+  background-color: #FFFFFF;
+  border-radius: 9px;
+  padding: 16px;
+  box-shadow: none;
+  border: 1px solid #CCCCCC;
+  height: 211px;
 }
 
 .notes-input {
   flex: 1;
   border: none;
   outline: none;
-  font-size: var(--font-md);
-  font-family: inherit;
+  font-size: 29.8158px;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   resize: none;
-  min-height: 60px;
-  max-height: 120px;
-  padding: var(--spacing-sm);
-  color: var(--text-dark);
+  min-height: 35px;
+  max-height: 175px;
+  padding: 0;
+  color: #000000;
+  letter-spacing: 0.02em;
 }
 
 .notes-input::placeholder {
-  color: var(--disabled-gray);
+  color: #9A9A9A;
 }
 
 .send-btn {
   background: none;
   border: none;
   cursor: pointer;
-  padding: var(--spacing-sm);
+  padding: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  transition: transform 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .send-btn:hover:not(:disabled) {
-  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 .send-btn:active:not(:disabled) {
-  transform: scale(0.95);
+  opacity: 0.6;
 }
 
 .send-btn:disabled {
   cursor: not-allowed;
+  opacity: 0.4;
 }
 
 .send-btn svg {
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
 }
 
 .send-btn.disabled svg path {
-  fill: var(--disabled-gray);
+  fill: #ABABAB;
 }
 
 .send-btn.enabled svg path {
-  fill: var(--primary-blue);
+  fill: #001F8B;
 }
 
 /* Empty State */
@@ -197,28 +217,28 @@
 }
 
 .notes-empty-state img {
-  width: 450px;
-  max-width: 70%;
-  height: auto;
-  margin-bottom: 40px;
+  width: 626px;
+  max-width: 626px;
+  height: 313px;
+  margin-bottom: 12px;
 }
 
 .notes-empty-state h2 {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 50px;
+  line-height: 59px;
   color: #000000;
   font-weight: 700;
-  letter-spacing: 0;
-  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
 }
 
 .notes-empty-state p {
-  font-size: 18px;
-  line-height: 28px;
-  color: #4A4A4A;
-  font-weight: 400;
-  letter-spacing: 0;
-  max-width: 520px;
+  font-size: 22px;
+  line-height: 32px;
+  color: #292929;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  max-width: 650px;
 }
 
 .empty-state-content {
@@ -233,11 +253,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  font-size: 13px;
-  line-height: 18px;
-  color: #666666;
+  gap: 8px;
+  font-size: 22px;
+  line-height: 32px;
+  color: #292929;
   font-weight: 400;
-  letter-spacing: 0;
-  padding-bottom: 8px;
+  letter-spacing: 0.02em;
+  padding-bottom: 24px;
 }

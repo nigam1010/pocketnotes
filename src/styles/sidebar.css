@@ -1,8 +1,8 @@
 /* Sidebar Container */
 .sidebar {
-  width: 350px;
-  min-width: 350px;
-  max-width: 350px;
+  width: 434px;
+  min-width: 434px;
+  max-width: 434px;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -18,17 +18,18 @@
   position: sticky;
   top: 0;
   background-color: #FFFFFF;
-  padding: 32px 0 28px 32px;
+  padding: 70px 0 0 96px;
+  padding-bottom: 40px;
   z-index: 10;
   border-bottom: none;
 }
 
 .sidebar-header h1 {
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 35px;
+  line-height: 41px;
   color: #000000;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   margin: 0;
 }
 
@@ -65,46 +66,50 @@
 .group-item {
   display: flex;
   align-items: center;
-  gap: 24px;
-  padding: 20px 0 20px 32px;
-  margin-bottom: 0;
+  gap: 29px;
+  padding: 0 0 0 44px;
+  margin-bottom: 49px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   background-color: transparent;
 }
 
 .group-item:hover {
-  background-color: #F7F7F7;
+  background-color: rgba(47, 47, 47, 0.05);
 }
 
 .group-item.active {
-  background-color: #2F2F2F2B;
+  background-color: rgba(47, 47, 47, 0.17);
+  border-radius: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 29px;
 }
 
 /* Group Avatar */
 .group-avatar {
-  width: 60px;
-  height: 60px;
-  min-width: 60px;
+  width: 68.9px;
+  height: 68.9px;
+  min-width: 68.9px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 97.69%;
   color: #FFFFFF;
   text-transform: uppercase;
-  letter-spacing: 0;
+  letter-spacing: 0.02em;
 }
 
 /* Group Name */
 .group-name {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 24px;
+  line-height: 28px;
   color: #000000;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0.02em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -114,25 +119,25 @@
 /* Sticky Add Button */
 .add-group-btn {
   position: absolute;
-  bottom: 24px;
-  right: 24px;
-  width: 60px;
-  height: 60px;
+  bottom: 47px;
+  left: 312px;
+  width: 93px;
+  height: 93px;
   border-radius: 50%;
   background: #16008B;
   border: none;
   color: #FFFFFF;
-  font-size: 36px;
-  line-height: 1;
-  font-weight: 300;
-  letter-spacing: 0;
+  font-size: 70px;
+  line-height: 97.69%;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
   z-index: 10;
-  box-shadow: 0 4px 12px rgba(22, 0, 139, 0.25);
+  box-shadow: none;
 }
 
 .add-group-btn:hover {
