@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import lockIcon from '../assets/lock.svg';
 
 const NotesArea = ({ group, onAddNote, onBack }) => {
   const [noteText, setNoteText] = useState('');
@@ -72,7 +73,7 @@ const NotesArea = ({ group, onAddNote, onBack }) => {
             </p>
           </div>
           <div className="lock-icon">
-            <img src="src/assets/lock.svg" alt="lock" />
+            <img src={lockIcon} alt="lock" />
              end-to-end encrypted
           </div>
         </div>
