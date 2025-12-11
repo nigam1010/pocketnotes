@@ -16,9 +16,11 @@
 /* Sticky Header */
 .sidebar-header {
   position: sticky;
-  top: 0;
   background-color: #FFFFFF;
-  padding: 40px 0 0 50px;
+  padding: 40px 0 25px 0; 
+  display: flex;            
+  justify-content: center;  
+  align-items: center;      
   padding-bottom: 25px;
   z-index: 10;
   border-bottom: none;
@@ -55,7 +57,7 @@
   background: #FFFFFF;
   border-radius: 4.5px;
   width: 8px;
-  height: 55px;
+  height: 20px;
 }
 
 .groups-list-container::-webkit-scrollbar-thumb:hover {
@@ -67,8 +69,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 0 0 0 30px;
-  margin-bottom: 30px;
+  padding: 0 0 0 40px;
+  margin-bottom: 20px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   background-color: transparent;
@@ -88,15 +90,15 @@
 
 /* Group Avatar */
 .group-avatar {
-  width: 68.9px;
-  height: 68.9px;
-  min-width: 68.9px;
+  width: 55.9px;
+  height: 55.9px;
+  min-width: 55.9px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 97.69%;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -105,7 +107,7 @@
 
 /* Group Name */
 .group-name {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   color: #000000;
   font-weight: 500;
@@ -120,14 +122,14 @@
 .add-group-btn {
   position: absolute;
   bottom: 35px;
-  left: 250px;
+  left: 70%;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background: #16008B;
   border: none;
   color: #FFFFFF;
-  font-size: 50px;
+  font-size: 60px;
   line-height: 97.69%;
   font-weight: 500;
   letter-spacing: 0.02em;
