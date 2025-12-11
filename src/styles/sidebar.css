@@ -1,8 +1,8 @@
 /* Sidebar Container */
 .sidebar {
-  width: 434px;
-  min-width: 434px;
-  max-width: 434px;
+  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -18,15 +18,15 @@
   position: sticky;
   top: 0;
   background-color: #FFFFFF;
-  padding: 70px 0 0 96px;
-  padding-bottom: 40px;
+  padding: 40px 0 0 50px;
+  padding-bottom: 25px;
   z-index: 10;
   border-bottom: none;
 }
 
 .sidebar-header h1 {
-  font-size: 35px;
-  line-height: 41px;
+  font-size: 28px;
+  line-height: 34px;
   color: #000000;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -66,9 +66,9 @@
 .group-item {
   display: flex;
   align-items: center;
-  gap: 29px;
-  padding: 0 0 0 44px;
-  margin-bottom: 49px;
+  gap: 20px;
+  padding: 0 0 0 30px;
+  margin-bottom: 30px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   background-color: transparent;
@@ -119,15 +119,15 @@
 /* Sticky Add Button */
 .add-group-btn {
   position: absolute;
-  bottom: 47px;
-  left: 312px;
-  width: 93px;
-  height: 93px;
+  bottom: 35px;
+  left: 250px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: #16008B;
   border: none;
   color: #FFFFFF;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 97.69%;
   font-weight: 500;
   letter-spacing: 0.02em;

@@ -15,25 +15,25 @@
   position: sticky;
   top: 0;
   background-color: #001F8B;
-  padding: 15px 17px;
-  height: 98px;
+  padding: 12px 20px;
+  height: 75px;
   display: flex;
   align-items: center;
-  gap: 29px;
+  gap: 20px;
   z-index: 10;
   box-shadow: none;
 }
 
 .notes-header-avatar {
-  width: 68.9px;
-  height: 68.9px;
-  min-width: 68.9px;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 97.69%;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -41,8 +41,8 @@
 }
 
 .notes-header-title {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 24px;
   color: #FFFFFF;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -80,44 +80,44 @@
 .note-item {
   background-color: #FFFFFF;
   border-radius: 5px;
-  padding: 24px;
-  margin-bottom: 30px;
+  padding: 18px;
+  margin-bottom: 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
 }
 
 .note-text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 160.19%;
   color: #000000;
   white-space: pre-wrap;
   word-wrap: break-word;
   letter-spacing: 0.035em;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   font-weight: 400;
 }
 
 .note-time {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
   justify-content: flex-end;
-  font-size: 18px;
+  font-size: 14px;
   color: #353535;
   margin-top: auto;
 }
 
 .note-date {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 97.69%;
   letter-spacing: 0.02em;
 }
 
 .note-time span:nth-child(2) {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background: #353535;
   border-radius: 50%;
   display: inline-block;
@@ -128,34 +128,34 @@
   position: sticky;
   bottom: 0;
   background-color: #001F8B;
-  padding: 23px 32px;
-  height: 255px;
+  padding: 18px 24px;
+  height: 180px;
   border-top: none;
 }
 
 .notes-input-container {
   display: flex;
   align-items: flex-end;
-  gap: 16px;
+  gap: 12px;
   background-color: #FFFFFF;
   border-radius: 9px;
-  padding: 16px;
+  padding: 14px;
   box-shadow: none;
   border: 1px solid #CCCCCC;
-  height: 211px;
+  height: 144px;
 }
 
 .notes-input {
   flex: 1;
   border: none;
   outline: none;
-  font-size: 29.8158px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 26px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   resize: none;
-  min-height: 35px;
-  max-height: 175px;
+  min-height: 26px;
+  max-height: 110px;
   padding: 0;
   color: #000000;
   letter-spacing: 0.02em;
@@ -190,8 +190,8 @@
 }
 
 .send-btn svg {
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
 }
 
 .send-btn.disabled svg path {
@@ -217,15 +217,15 @@
 }
 
 .notes-empty-state img {
-  width: 626px;
-  max-width: 626px;
-  height: 313px;
-  margin-bottom: 12px;
+  width: 450px;
+  max-width: 450px;
+  height: 230px;
+  margin-bottom: 20px;
 }
 
 .notes-empty-state h2 {
-  font-size: 50px;
-  line-height: 59px;
+  font-size: 38px;
+  line-height: 45px;
   color: #000000;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -233,12 +233,12 @@
 }
 
 .notes-empty-state p {
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 26px;
   color: #292929;
   font-weight: 500;
   letter-spacing: 0.02em;
-  max-width: 650px;
+  max-width: 550px;
 }
 
 .empty-state-content {
@@ -253,11 +253,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  font-size: 22px;
-  line-height: 32px;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 24px;
   color: #292929;
   font-weight: 400;
   letter-spacing: 0.02em;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
 }
