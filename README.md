@@ -1,6 +1,7 @@
 # Pocket Notes - React Notes App
 
-Deployed at: https://pocketnotes-psi.vercel.app/
+Deployed at: Link 1: https://pocketnotes-psi.vercel.app/
+            Link 2: https://pocketnotes-psi.vercel.app/
 
 A minimal note-taking application built with React and Vite, featuring group-based note organization with localStorage persistence.
 
